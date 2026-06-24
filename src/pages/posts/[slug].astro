@@ -1,0 +1,41 @@
+---
+import { marked } from "marked";
+import BlogLayout from "../../layouts/BlogLayout.astro";
+import postsData from "../../data/posts.json";
+
+const postModules = import.meta.glob("../../posts/*/profile.json", { eager: true });
+const contentModules = import.meta.glob("../../posts/*/content.md", {
+  eager: true,
+  query: "?raw",
+  import: "default",
+});
+
+export function getStaticPaths() {
+  return postsData.posts
+    .filter((post) => post.status === "published")
+    .map((post) => ({ params: { slug: post.slug } }));
+}
+
+const { slug } = Astro.params;
+const profileModule = postModules[`../../posts/${slug}/profile.json`];
+const profile = profileModule?.default ?? profileModule;
+const markdown = contentModules[`../../posts/${slug}/content.md`] ?? "# Post not found\n\nThe content file for this post is missing.";
+const html = marked.parse(markdown);
+---
+<BlogLayout title={`${profile.title} | Soft Strange Studio Blog`} description={profile.excerpt}>
+  <main class="post-layout">
+    <header class="post-header">
+      <p class="eyebrow">{profile.series}</p>
+      <h1>{profile.title}</h1>
+      <p>{profile.subtitle}</p>
+      <div class="meta-row">
+        <span class="pill">{profile.category}</span>
+        <span>{profile.date}</span>
+      </div>
+      <div class="tag-list" aria-label="Post tags">
+        {profile.tags.map((tag) => <span class="tag">{tag}</span>)}
+      </div>
+    </header>
+    <article class="post-body" set:html={html} />
+  </main>
+</BlogLayout>
