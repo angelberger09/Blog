@@ -1,0 +1,17 @@
+{
+  "slug": "building-my-first-game-systems",
+  "title": "Building My First Game Systems",
+  "subtitle": "Tiny mechanics, feedback loops, and the first sparks of play.",
+  "date": "2026-06-25",
+  "updatedAt": "2026-06-25",
+  "status": "published",
+  "pinned": false,
+  "featured": true,
+  "category": "Game Dev",
+  "series": "Learning in Public",
+  "tags": ["game development", "unity", "prototyping", "systems design"],
+  "excerpt": "A mock post about learning how game mechanics, feedback loops, and tiny prototypes become playable systems.",
+  "contentPath": "./content.md",
+  "coverImage": null,
+  "visibility": "public"
+}
