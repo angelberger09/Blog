@@ -1,0 +1,17 @@
+{
+  "slug": "debugging-is-a-creative-skill",
+  "title": "Debugging Is a Creative Skill",
+  "subtitle": "The art of noticing what the system is actually doing.",
+  "date": "2026-06-27",
+  "updatedAt": "2026-06-27",
+  "status": "published",
+  "pinned": false,
+  "featured": false,
+  "category": "Programming",
+  "series": "Learning in Public",
+  "tags": ["debugging", "programming", "creative process", "problem solving"],
+  "excerpt": "A mock post about debugging as observation, patience, pattern recognition, and creative repair.",
+  "contentPath": "./content.md",
+  "coverImage": null,
+  "visibility": "public"
+}
