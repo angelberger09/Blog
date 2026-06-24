@@ -1,0 +1,17 @@
+{
+  "slug": "ai-as-a-programming-partner",
+  "title": "AI as a Programming Partner",
+  "subtitle": "Learning with help without skipping the learning.",
+  "date": "2026-06-26",
+  "updatedAt": "2026-06-26",
+  "status": "published",
+  "pinned": false,
+  "featured": true,
+  "category": "AI",
+  "series": "Learning in Public",
+  "tags": ["ai", "programming", "learning", "workflow"],
+  "excerpt": "A mock post about using AI as a patient programming partner without letting it replace understanding.",
+  "contentPath": "./content.md",
+  "coverImage": null,
+  "visibility": "public"
+}
