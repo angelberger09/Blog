@@ -1,0 +1,43 @@
+---
+import BlogLayout from "../layouts/BlogLayout.astro";
+import postsData from "../data/posts.json";
+
+const posts = postsData.posts.filter((post) => post.status === "published");
+const latestPosts = posts.slice(0, 3);
+const categories = [...new Set(posts.map((post) => post.category))];
+---
+<BlogLayout title="Soft Strange Studio Blog" description="Mock public blog for software, game dev, AI, programming, and creative tech notes.">
+  <main>
+    <section class="hero" aria-labelledby="home-title">
+      <p class="eyebrow">Learning in public</p>
+      <h1 id="home-title">Notes from the soft strange build log.</h1>
+      <p>
+        A tiny Astro blog and public content feed for test posts about learning software,
+        game development, AI-assisted programming, debugging, and creative tech.
+      </p>
+      <div class="meta-row" aria-label="Available categories">
+        {categories.map((category) => <span class="pill">{category}</span>)}
+      </div>
+      <p><a class="button-link" href={`${import.meta.env.BASE_URL}posts/`}>Read all posts</a></p>
+    </section>
+
+    <section aria-labelledby="latest-title">
+      <p class="eyebrow">Latest posts</p>
+      <h2 id="latest-title">Fresh mock entries</h2>
+      <div class="post-grid">
+        {latestPosts.map((post) => (
+          <a class="post-card" href={`${import.meta.env.BASE_URL}posts/${post.slug}/`}>
+            <article>
+              <div class="meta-row">
+                <span class="pill">{post.category}</span>
+                <span>{post.date}</span>
+              </div>
+              <h3>{post.title}</h3>
+              <p>{post.excerpt}</p>
+            </article>
+          </a>
+        ))}
+      </div>
+    </section>
+  </main>
+</BlogLayout>
