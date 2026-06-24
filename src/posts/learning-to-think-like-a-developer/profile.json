@@ -1,0 +1,17 @@
+{
+  "slug": "learning-to-think-like-a-developer",
+  "title": "Learning to Think Like a Developer",
+  "subtitle": "From clicking buttons to understanding systems.",
+  "date": "2026-06-24",
+  "updatedAt": "2026-06-24",
+  "status": "published",
+  "pinned": true,
+  "featured": true,
+  "category": "Software Dev",
+  "series": "Learning in Public",
+  "tags": ["software development", "learning", "systems thinking"],
+  "excerpt": "A mock reflection on moving from curiosity to systems thinking while learning software development.",
+  "contentPath": "./content.md",
+  "coverImage": null,
+  "visibility": "public"
+}
