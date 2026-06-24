@@ -1,0 +1,17 @@
+{
+  "slug": "from-art-tools-to-code-tools",
+  "title": "From Art Tools to Code Tools",
+  "subtitle": "Finding the bridge between visual making and technical building.",
+  "date": "2026-06-28",
+  "updatedAt": "2026-06-28",
+  "status": "published",
+  "pinned": false,
+  "featured": false,
+  "category": "Creative Tech",
+  "series": "Learning in Public",
+  "tags": ["creative tech", "tech art", "shaders", "tools", "game dev"],
+  "excerpt": "A mock post about the bridge between visual art, tech art, shaders, game tools, and programming.",
+  "contentPath": "./content.md",
+  "coverImage": null,
+  "visibility": "public"
+}
