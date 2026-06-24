@@ -1,0 +1,61 @@
+{
+  "version": "1.0.0",
+  "updatedAt": "2026-06-24",
+  "posts": [
+    {
+      "slug": "learning-to-think-like-a-developer",
+      "title": "Learning to Think Like a Developer",
+      "date": "2026-06-24",
+      "status": "published",
+      "category": "Software Dev",
+      "series": "Learning in Public",
+      "excerpt": "A mock reflection on moving from curiosity to systems thinking while learning software development.",
+      "profilePath": "/Blog/posts/learning-to-think-like-a-developer/profile.json",
+      "contentPath": "/Blog/posts/learning-to-think-like-a-developer/content.md"
+    },
+    {
+      "slug": "building-my-first-game-systems",
+      "title": "Building My First Game Systems",
+      "date": "2026-06-25",
+      "status": "published",
+      "category": "Game Dev",
+      "series": "Learning in Public",
+      "excerpt": "A mock post about learning how game mechanics, feedback loops, and tiny prototypes become playable systems.",
+      "profilePath": "/Blog/posts/building-my-first-game-systems/profile.json",
+      "contentPath": "/Blog/posts/building-my-first-game-systems/content.md"
+    },
+    {
+      "slug": "ai-as-a-programming-partner",
+      "title": "AI as a Programming Partner",
+      "date": "2026-06-26",
+      "status": "published",
+      "category": "AI",
+      "series": "Learning in Public",
+      "excerpt": "A mock post about using AI as a patient programming partner without letting it replace understanding.",
+      "profilePath": "/Blog/posts/ai-as-a-programming-partner/profile.json",
+      "contentPath": "/Blog/posts/ai-as-a-programming-partner/content.md"
+    },
+    {
+      "slug": "debugging-is-a-creative-skill",
+      "title": "Debugging Is a Creative Skill",
+      "date": "2026-06-27",
+      "status": "published",
+      "category": "Programming",
+      "series": "Learning in Public",
+      "excerpt": "A mock post about debugging as observation, patience, pattern recognition, and creative repair.",
+      "profilePath": "/Blog/posts/debugging-is-a-creative-skill/profile.json",
+      "contentPath": "/Blog/posts/debugging-is-a-creative-skill/content.md"
+    },
+    {
+      "slug": "from-art-tools-to-code-tools",
+      "title": "From Art Tools to Code Tools",
+      "date": "2026-06-28",
+      "status": "published",
+      "category": "Creative Tech",
+      "series": "Learning in Public",
+      "excerpt": "A mock post about the bridge between visual art, tech art, shaders, game tools, and programming.",
+      "profilePath": "/Blog/posts/from-art-tools-to-code-tools/profile.json",
+      "contentPath": "/Blog/posts/from-art-tools-to-code-tools/content.md"
+    }
+  ]
+}
