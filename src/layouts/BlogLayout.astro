@@ -1,0 +1,33 @@
+---
+import "../styles/global.css";
+
+const {
+  title = "Soft Strange Studio Blog",
+  description = "Learning in public notes about software, game dev, AI, programming, and creative tech.",
+} = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href={import.meta.env.BASE_URL}>Soft Strange Studio</a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href={import.meta.env.BASE_URL}>Home</a>
+          <a href={`${import.meta.env.BASE_URL}posts/`}>Posts</a>
+          <a href={`${import.meta.env.BASE_URL}posts.json`}>JSON Feed</a>
+        </nav>
+      </header>
+      <slot />
+      <footer class="site-footer">
+        <p>Mock public blog feed for the main Website integration test.</p>
+      </footer>
+    </div>
+  </body>
+</html>
