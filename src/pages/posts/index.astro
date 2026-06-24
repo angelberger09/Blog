@@ -1,0 +1,33 @@
+---
+import BlogLayout from "../../layouts/BlogLayout.astro";
+import postsData from "../../data/posts.json";
+
+const posts = postsData.posts.filter((post) => post.status === "published");
+---
+<BlogLayout title="All Posts | Soft Strange Studio Blog" description="All mock learning-in-public posts from the Soft Strange Studio Blog feed.">
+  <main>
+    <section class="hero" aria-labelledby="posts-title">
+      <p class="eyebrow">All posts</p>
+      <h1 id="posts-title">The public post index.</h1>
+      <p>
+        These entries are driven by structured JSON profiles and Markdown content files,
+        so the main Website repo can pull clean public data later.
+      </p>
+    </section>
+
+    <section class="post-grid" aria-label="Blog posts">
+      {posts.map((post) => (
+        <a class="post-card" href={`${import.meta.env.BASE_URL}posts/${post.slug}/`}>
+          <article>
+            <div class="meta-row">
+              <span class="pill">{post.category}</span>
+              <span>{post.date}</span>
+            </div>
+            <h3>{post.title}</h3>
+            <p>{post.excerpt}</p>
+          </article>
+        </a>
+      ))}
+    </section>
+  </main>
+</BlogLayout>
